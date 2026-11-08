@@ -1,0 +1,166 @@
+[
+  {
+    "type": "json_flag",
+    "id": "E_GASOLINE"
+  },
+  {
+    "type": "vehicle_part",
+    "id": "engine_1cyl",
+    "copy-from": "engine_1cyl",
+    "extend": { "flags": [ "E_GASOLINE" ] }
+  },
+  {
+    "type": "vehicle_part",
+    "id": "engine_1cyl_large",
+    "copy-from": "engine_1cyl_large",
+    "extend": { "flags": [ "E_GASOLINE" ] }
+  },
+  {
+    "type": "vehicle_part",
+    "id": "engine_1cyl_med",
+    "copy-from": "engine_1cyl_med",
+    "extend": { "flags": [ "E_GASOLINE" ] }
+  },
+  {
+    "type": "vehicle_part",
+    "id": "engine_1cyl_small",
+    "copy-from": "engine_1cyl_small",
+    "extend": { "flags": [ "E_GASOLINE" ] }
+  },
+  {
+    "type": "vehicle_part",
+    "id": "engine_inline4",
+    "copy-from": "engine_inline4",
+    "extend": { "flags": [ "E_GASOLINE" ] }
+  },
+  {
+    "type": "vehicle_part",
+    "id": "engine_v6",
+    "copy-from": "engine_v6",
+    "extend": { "flags": [ "E_GASOLINE" ] }
+  },
+  {
+    "type": "vehicle_part",
+    "id": "engine_v8",
+    "copy-from": "engine_v8",
+    "extend": { "flags": [ "E_GASOLINE" ] }
+  },
+  {
+    "type": "vehicle_part",
+    "id": "engine_v12",
+    "copy-from": "engine_v12",
+    "extend": { "flags": [ "E_GASOLINE" ] }
+  },
+  {
+    "type": "vehicle_part",
+    "id": "engine_vtwin",
+    "copy-from": "engine_vtwin",
+    "extend": { "flags": [ "E_GASOLINE" ] }
+  },
+  {
+    "type": "vehicle_part",
+    "id": "xedra_genset",
+    "copy-from": "xedra_genset",
+    "extend": { "flags": [ "E_GASOLINE" ] }
+  },
+  {
+    "type": "json_flag",
+    "id": "LPG_CONVERSION",
+    "requires_flag": "E_GASOLINE"
+  },
+  {
+    "type": "ITEM",
+    "id": "lpg_conversion_kit",
+    "name": { "str": "LPG conversion kit" },
+    "description": "An assembled propane port-injection system for a gasoline engine.  Contains a pressure regulator adapted from SCUBA equipment, a coolant-heated vaporizer, a shutoff valve, filters, pressure and temperature monitoring hardware, an injection control board, and an injector rail with associated plumbing and wiring.  The propane tank is not included.",
+    "category": "veh_parts",
+    "weight": "12 kg",
+    "volume": "10 L",
+    "longest_side": "50 cm",
+    "price": "800 USD",
+    "price_postapoc": "75 USD",
+    "material": [ "steel", "aluminum", "brass", "rubber", "plastic" ],
+    "symbol": ";",
+    "color": "light_cyan",
+    "looks_like": "muffler"
+  },
+  {
+    "type": "vehicle_part",
+    "id": "lpg_conversion",
+    "name": { "str": "LPG conversion kit" },
+    "description": "A propane vaporizer-regulator, injector fittings, and associated plumbing connected to this gasoline engine.  Allows the engine to consume propane from vehicle tanks.",
+    "looks_like": "muffler",
+    "categories": [ "movement" ],
+    "color": "light_cyan",
+    "broken_color": "red",
+    "damage_modifier": 50,
+    "durability": 80,
+    "item": "lpg_conversion_kit",
+    "requirements": {
+      "install": {
+        "skills": [ [ "mechanics", 4 ] ],
+        "time": "45 m",
+        "using": [
+          [ "vehicle_wrench_2", 1 ],
+          [ "soldering_standard", 10 ]
+        ]
+      },
+      "removal": {
+        "skills": [ [ "mechanics", 3 ] ],
+        "time": "30 m",
+        "using": [ [ "vehicle_wrench_2", 1 ] ]
+      },
+      "repair": {
+        "skills": [ [ "mechanics", 5 ] ],
+        "time": "30 m",
+        "using": [
+          [ "soldering_standard", 5 ],
+          [ "repair_welding_standard", 1 ]
+        ]
+      }
+    },
+    "flags": [ "LPG_CONVERSION" ],
+    "breaks_into": [
+      { "item": "scrap", "count": [ 4, 8 ] },
+      { "item": "hose", "prob": 50 },
+      { "item": "copper_wire", "count": [ 1, 3 ] },
+      { "item": "e_scrap", "count": [ 0, 1 ] },
+      { "item": "plastic_chunk", "count": [ 1, 2 ] }
+    ],
+    "damage_reduction": { "all": 5 },
+    "variants": [
+      {
+        "symbols": ";",
+        "symbols_broken": "#"
+      }
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "lpg_conversion_kit",
+    "activity_level": "MODERATE_EXERCISE",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_VEHICLE",
+    "skill_used": "mechanics",
+    "difficulty": 7,
+    "time": "4 h",
+    "autolearn": true,
+    "using": [
+      [ "welding_standard", 10 ],
+      [ "soldering_standard", 20 ]
+    ],
+    "components": [
+      [ [ "scuba_regulator", 1 ] ],
+      [ [ "hd_valve", 1 ] ],
+      [ [ "pressure_gauge", 1 ] ],
+      [ [ "filter_liquid", 1 ] ],
+      [ [ "thermostat", 1 ] ],
+      [ [ "processor", 1 ] ],
+      [ [ "hose", 3 ] ],
+      [ [ "pipe", 2 ] ],
+      [ [ "cable", 20 ] ],
+      [ [ "e_scrap", 2 ] ],
+      [ [ "gasket_plastic_set", 1 ] ]
+    ]
+  }
+]

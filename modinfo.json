@@ -1,0 +1,10 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "local_balance",
+    "name": "Локальный баланс",
+    "description": "Набор не связанных между собой исправлений. Для личного пользования.",
+    "category": "rebalance",
+    "dependencies": [ "dda" ]
+  }
+]
