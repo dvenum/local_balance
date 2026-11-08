@@ -1,0 +1,57 @@
+[
+  {
+    "type": "wound",
+    "id": "scratch_small",
+    "copy-from": "scratch_small",
+    "pain": [ 0, 1 ],
+    "healing_time": [ "1 days", "2 days" ]
+  },
+  {
+    "type": "wound",
+    "id": "scratch_medium",
+    "copy-from": "scratch_medium",
+    "pain": [ 4, 6 ],
+    "healing_time": [ "3 days", "6 days" ]
+  },
+  {
+    "type": "wound",
+    "id": "clean_scratch_small",
+    "copy-from": "clean_scratch_small",
+    "pain": [ 0, 1 ],
+    "healing_time": [ "1 days", "2 days" ]
+  },
+  {
+    "type": "wound",
+    "id": "clean_scratch_medium",
+    "copy-from": "clean_scratch_medium",
+    "pain": [ 4, 6 ],
+    "healing_time": [ "3 days", "6 days" ]
+  },
+  {
+    "type": "wound",
+    "id": "bandaged_scratch_small",
+    "copy-from": "bandaged_scratch_small",
+    "pain": [ 0, 1 ],
+    "healing_time": [ "1 days", "2 days" ]
+  },
+  {
+    "type": "wound",
+    "id": "bandaged_scratch_medium",
+    "copy-from": "bandaged_scratch_medium",
+    "pain": [ 4, 6 ],
+    "healing_time": [ "2 days", "4 days" ]
+  },
+  {
+    "type": "wound",
+    "id": "bruise_small",
+    "copy-from": "bruise_small",
+    "pain": [ 0, 1 ],
+    "healing_time": [ "1 days", "3 days" ]
+  },
+  {
+    "type": "wound",
+    "id": "bruise_medium",
+    "copy-from": "bruise_medium",
+    "pain": [ 3, 5 ]
+  }
+]
