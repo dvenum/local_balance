@@ -137,13 +137,14 @@
   },
   {
     "type": "recipe",
+    "id": "lpg_conversion_kit_donor",
     "result": "lpg_conversion_kit",
     "activity_level": "MODERATE_EXERCISE",
     "category": "CC_OTHER",
     "subcategory": "CSC_OTHER_VEHICLE",
     "skill_used": "mechanics",
-    "difficulty": 7,
-    "time": "4 h",
+    "difficulty": 6,
+    "time": "3 h",
     "autolearn": true,
     "using": [
       [ "welding_standard", 10 ],
@@ -152,15 +153,43 @@
     "components": [
       [ [ "scuba_regulator", 1 ] ],
       [ [ "hd_valve", 1 ] ],
-      [ [ "pressure_gauge", 1 ] ],
       [ [ "filter_liquid", 1 ] ],
       [ [ "thermostat", 1 ] ],
       [ [ "processor", 1 ] ],
-      [ [ "hose", 3 ] ],
-      [ [ "pipe", 2 ] ],
-      [ [ "cable", 20 ] ],
-      [ [ "e_scrap", 2 ] ],
+      [ [ "hose", 2 ] ],
+      [ [ "pipe", 1 ] ],
+      [ [ "cable", 10 ] ],
+      [ [ "e_scrap", 1 ] ],
       [ [ "gasket_plastic_set", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "id": "lpg_conversion_kit_improvised",
+    "result": "lpg_conversion_kit",
+    "activity_level": "MODERATE_EXERCISE",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_VEHICLE",
+    "skill_used": "mechanics",
+    "difficulty": 7,
+    "time": "12 h",
+    "autolearn": true,
+    "using": [
+      [ "welding_standard", 10 ],
+      [ "soldering_standard", 20 ]
+    ],
+    "components": [
+      [ [ "pressure_gauge", 2 ] ],
+      [ [ "hd_valve", 2 ] ],
+      [ [ "thermostat", 1 ] ],
+      [ [ "pipe", 3 ] ],
+      [ [ "hose", 3 ] ],
+      [ [ "processor", 1 ] ],
+      [ [ "e_scrap", 3 ] ],
+      [ [ "cable", 20 ] ],
+      [ [ "filter_liquid", 1 ] ],
+      [ [ "gasket_plastic_set", 1 ] ],
+      [ [ "scrap", 5 ] ]
     ]
   }
 ]
