@@ -137,8 +137,8 @@
   },
   {
     "type": "recipe",
-    "id": "lpg_conversion_kit_donor",
     "result": "lpg_conversion_kit",
+    "id_suffix": "donor",
     "activity_level": "MODERATE_EXERCISE",
     "category": "CC_OTHER",
     "subcategory": "CSC_OTHER_VEHICLE",
@@ -163,10 +163,10 @@
       [ [ "gasket_plastic_set", 1 ] ]
     ]
   },
-  {
+ {
     "type": "recipe",
-    "id": "lpg_conversion_kit_improvised",
     "result": "lpg_conversion_kit",
+    "id_suffix": "improvised",
     "activity_level": "MODERATE_EXERCISE",
     "category": "CC_OTHER",
     "subcategory": "CSC_OTHER_VEHICLE",
